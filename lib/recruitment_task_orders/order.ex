@@ -1,11 +1,13 @@
 defmodule RecruitmentTaskOrders.Order do
   use Ecto.Schema
   import Ecto.Changeset
+  alias RecruitmentTaskOrders.OrderItem
 
   schema "orders" do
     field(:net_total, :decimal)
     field(:tax, :decimal)
     field(:total, :decimal)
+    has_many(:items, OrderItem)
   end
 
   def changeset(order, params \\ %{}) do
