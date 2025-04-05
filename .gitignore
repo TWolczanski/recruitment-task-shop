@@ -17,7 +17,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-recruitment_task_orders-*.tar
+recruitment_task_shop-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/

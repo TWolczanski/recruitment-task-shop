@@ -1,9 +1,9 @@
-defmodule RecruitmentTaskOrders.MixProject do
+defmodule RecruitmentTaskShop.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :recruitment_task_orders,
+      app: :recruitment_task_shop,
       version: "0.1.0",
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule RecruitmentTaskOrders.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {RecruitmentTaskOrders.Application, []}
+      mod: {RecruitmentTaskShop.Application, []}
     ]
   end
 

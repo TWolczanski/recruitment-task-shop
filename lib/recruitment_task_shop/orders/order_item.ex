@@ -1,7 +1,7 @@
-defmodule RecruitmentTaskOrders.OrderItem do
+defmodule RecruitmentTaskShop.Orders.OrderItem do
   use Ecto.Schema
   import Ecto.Changeset
-  alias RecruitmentTaskOrders.Order
+  alias RecruitmentTaskShop.Order
 
   schema "order_items" do
     field(:net_price, :decimal)

@@ -1,4 +1,4 @@
-defmodule RecruitmentTaskOrders.Application do
+defmodule RecruitmentTaskShop.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -8,14 +8,14 @@ defmodule RecruitmentTaskOrders.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: RecruitmentTaskOrders.Worker.start_link(arg)
-      # {RecruitmentTaskOrders.Worker, arg}
-      RecruitmentTaskOrders.Repo
+      # Starts a worker by calling: RecruitmentTaskShop.Worker.start_link(arg)
+      # {RecruitmentTaskShop.Worker, arg}
+      RecruitmentTaskShop.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: RecruitmentTaskOrders.Supervisor]
+    opts = [strategy: :one_for_one, name: RecruitmentTaskShop.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

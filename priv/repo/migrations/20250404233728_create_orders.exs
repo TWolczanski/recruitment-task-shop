@@ -1,4 +1,4 @@
-defmodule RecruitmentTaskOrders.Repo.Migrations.CreateOrders do
+defmodule RecruitmentTaskShop.Repo.Migrations.CreateOrders do
   use Ecto.Migration
 
   def change do

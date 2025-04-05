@@ -1,6 +1,6 @@
-defmodule RecruitmentTaskOrders do
+defmodule RecruitmentTaskShop do
   @moduledoc """
-  Documentation for `RecruitmentTaskOrders`.
+  Documentation for `RecruitmentTaskShop`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule RecruitmentTaskOrders do
 
   ## Examples
 
-      iex> RecruitmentTaskOrders.hello()
+      iex> RecruitmentTaskShop.hello()
       :world
 
   """
