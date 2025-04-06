@@ -1,7 +1,7 @@
 defmodule RecruitmentTaskShop.Orders.OrderItem do
   use Ecto.Schema
   import Ecto.Changeset
-  alias RecruitmentTaskShop.Order
+  alias RecruitmentTaskShop.Orders.Order
 
   schema "order_items" do
     field(:net_price, :decimal)
@@ -14,7 +14,6 @@ defmodule RecruitmentTaskShop.Orders.OrderItem do
   def changeset(order_item, params \\ %{}) do
     order_item
     |> cast(params, [:net_price, :quantity, :net_total, :total, :order_id])
-    |> validate_required([:net_price, :quantity, :order_id])
     |> validate_number(:net_price, greater_than: 0)
     |> validate_number(:quantity, greater_than: 0)
     |> validate_number(:net_total, greater_than: 0)
