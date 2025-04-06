@@ -1,21 +1,8 @@
 # RecruitmentTaskShop
-
-**TODO: Add description**
+Main business logic is located in `lib/recruitment_task_shop/orders.ex` and the tests can be found in `test/recruitment_task_shop_test.exs`.
 
 ## Installation
+`mix setup`
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `recruitment_task_shop` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:recruitment_task_shop, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/recruitment_task_shop>.
-
+## Testing
+`mix test`
