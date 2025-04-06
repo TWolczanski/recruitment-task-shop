@@ -11,10 +11,5 @@ defmodule RecruitmentTaskShop.Repo.Migrations.CreateOrderItems do
     end
 
     create(index(:order_items, [:order_id]))
-
-    create(constraint("order_items", :net_price_must_be_positive, check: "net_price > 0"))
-    create(constraint("order_items", :quantity_must_be_positive, check: "quantity > 0"))
-    create(constraint("order_items", :net_total_must_be_positive, check: "net_total > 0"))
-    create(constraint("order_items", :total_must_be_positive, check: "total > 0"))
   end
 end
