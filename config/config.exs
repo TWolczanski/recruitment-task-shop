@@ -8,3 +8,5 @@ config :recruitment_task_shop, RecruitmentTaskShop.Repo,
 
 config :recruitment_task_shop,
   ecto_repos: [RecruitmentTaskShop.Repo]
+
+import_config "#{config_env()}.exs"
